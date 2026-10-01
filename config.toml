@@ -34,11 +34,11 @@ keys = [
 
   # Search
   { key = "f", with = "control | shift", action = "SearchForward" },
-  { key = "n", with = "alt", action = "SearchFocusNext" },
+  { key = "n", with = "alt", action = "SearchFocusNext" }, # Mac: Use Enter instead
   { key = "p", with = "alt", action = "SearchFocusPrevious" },
 
   # vi mode
-  { key = "space", with = "control | shift", action = "ToggleVIMode" },
+  { key = "v", with = "shift | alt", action = "ToggleVIMode" },
 
   # Escape sequences
   # Move cursor to the previous word
