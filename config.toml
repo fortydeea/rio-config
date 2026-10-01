@@ -1,0 +1,72 @@
+# General
+
+hide-mouse-cursor-when-typing = true
+copy-on-select = true
+
+theme="pencil-dark"
+
+[bindings]
+keys = [
+  # Split panels
+  { key = "d", with = "control | shift", action = "SplitDown" },
+  { key = "r", with = "control | shift", action = "SplitRight" },
+
+  # Navigate between panels
+  { key = "]", with = "control", action = "SelectNextSplit" },
+  { key = "[", with = "control", action = "SelectPrevSplit" },
+
+  # Resize panels
+  # Currently does not work on  0.5.27
+  { key = "9", with = "control | shift", action = "MoveDividerUp" },
+  { key = "0", with = "control | shift", action = "MoveDividerDown" },
+  { key = "-", with = "control | shift", action = "MoveDividerLeft" },
+  { key = "=", with = "control | shift", action = "MoveDividerRight" },
+
+  # Manage tabs
+  { key = "t", with = "control | shift", action = "CreateTab" },
+  { key = "w", with = "control | shift", action = "CloseSplitOrTab" },
+  { key = "tab", with = "control", action = "SelectNextTab" },
+  { key = "tab", with = "control | shift", action = "SelectPrevTab" },
+
+  # Copy and paste
+  { key = "c", with = "control | shift", action = "Copy" },
+  { key = "v", with = "control | shift", action = "Paste" },
+
+  # Search
+  { key = "f", with = "control | shift", action = "SearchForward" },
+  { key = "n", with = "alt", action = "SearchFocusNext" },
+  { key = "p", with = "alt", action = "SearchFocusPrevious" },
+
+  # vi mode
+  { key = "space", with = "control | shift", action = "ToggleVIMode" },
+
+  # Escape sequences
+  # Move cursor to the previous word
+  { key = "b", with = "control", esc = "\u001bb" },
+
+  # Move cursor to the next word
+  { key = "e", with = "control", esc = "\u001bf" },
+
+  # Move cursor to beginning of line (ESC [ H)
+  { key = "a", with = "control", esc = "\u001b[H" },
+
+  # Move cursor to end of line (ESC [ F)
+  { key = "4", with = "control | shift", esc = "\u001b[F" },
+]
+
+[editor]
+program = "nvim"
+
+[effects]
+trail-cursor = true
+trail-curosr-decay = [100, 100]
+
+[fonts]
+size = 20
+family = "Hack Nerd Font Mono"
+
+[platform]
+windows.shell = { program = "wsl", args = ["--cd", "~/"] }
+
+[window]
+opacity = 0.8
