@@ -3,6 +3,9 @@
 hide-mouse-cursor-when-typing = true
 copy-on-select = true
 
+padding = [0]
+margin = [0]
+
 theme="pencil-dark"
 
 [bindings]
