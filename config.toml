@@ -72,3 +72,7 @@ windows.shell = { program = "wsl", args = ["--cd", "~/"] }
 
 [window]
 opacity = 0.8
+
+[renderer]
+# Workaround for Windows opacity issues. See #1946 in raphamorim/rio
+use-cpu = true
