@@ -66,6 +66,11 @@ trail-curosr-decay = [100, 100]
 [fonts]
 size = 20
 family = "Hack Nerd Font Mono"
+symbol-map = [
+  { start = "AC00", end = "D7A3", font-family = "D2Coding" },  # Hangul syllables
+  { start = "1100", end = "11FF", font-family = "D2Coding" },  # Jamo
+  { start = "3130", end = "318F", font-family = "D2Coding" },  # Compatibility Jamo
+]
 
 [platform]
 windows.shell = { program = "wsl", args = ["--cd", "~/"] }
